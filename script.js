@@ -1,31 +1,6 @@
 let allProducts = [];
 let currentFilterType = "Весь ассортимент";
 
-const btnEl = document.querySelectorAll('.btn');
-const bodyEl = document.querySelector('.body');
-
-btnEl.forEach(e => {
-    e.addEventListener('click', () => {
-        bodyEl.style.opacity = 0.5;
-        bodyEl.style.transition = "0.3s";
-        const orderForm = document.createElement("form");
-        orderForm.className = "order_form";
-        orderForm.innerHTML = `<form class="order_form">
-  <label for="name">Имя:</label>
-  <input type="text" id="name" name="name" /><br />
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" /><br />
-
-  <label for="message">Сообщение:</label><br />
-  <textarea id="message" name="message"></textarea><br />
-
-  <button type="submit" onclick=submitForm()">Отправить</button>
-</form>`;
-        bodyEl.append(orderForm);
-    });
-});
-
 async function loadProducts() {
     try {
         const response = await fetch("./data.json");

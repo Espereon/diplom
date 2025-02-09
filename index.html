@@ -18,7 +18,7 @@
 </head>
 
 <body class="body">
-    <header class="header center">
+    <header class="header center lock_padding">
         <a href="index.html">
             <img class="logo_img" src="icons/logo.png" alt="logo" /></a>
         <nav class="header_nav">
@@ -43,7 +43,8 @@
         <div class="order center">
             <div class="order_type">
                 <img src="images/japan_flag.png" alt="japan_flag" class="order_type_img" />
-                <button class="btn btn-outline-primary">ПОДОБРАТЬ АВТО из ЯПОНИИ</button>
+                <button class="btn btn-outline-primary"><a href="#popup" class="popup_link">ПОДОБРАТЬ АВТО из
+                        ЯПОНИИ</a></button>
             </div>
             <div class="order_type">
                 <img src="images/korean_flag.png" alt="korean_flag" class="order_type_img" />
@@ -118,14 +119,30 @@
     <div id="popup" class="popup">
         <div class="popup_buddy">
             <div class="popup_content">
-                <a href="#" class="popup_close">X</a>
-                <div class="popup_title">Текст</div>
-                <div class="popup_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, aperiam?
-                </div>
+                <a href="#header" class="popup_close close_popup">X</a>
+                <form action="" method="get">
+                    <label>
+                        Ваше имя:
+                        <input type="text" name="name" placeholder="Иван Иванов">
+                    </label>
+
+                    <label>
+                        Электронная почта:
+                        <input type="email" name="email" placeholder="example@email.com">
+                    </label>
+                    <label>
+                        Отзыв:
+                        <textarea name="comment" placeholder="Что вам понравилось?"></textarea>
+                    </label>
+                    <button type="submit">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 
 </body>
 
