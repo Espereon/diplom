@@ -48,11 +48,13 @@
             </div>
             <div class="order_type">
                 <img src="images/korean_flag.png" alt="korean_flag" class="order_type_img" />
-                <button class="btn btn-outline-primary">ПОДОБРАТЬ АВТО из КОРЕИ</button>
+                <button class="btn btn-outline-primary"><a href="#popup" class="popup_link">ПОДОБРАТЬ АВТО из
+                        КОРЕИ</a></button>
             </div>
             <div class="order_type">
                 <img src="images/chines_flag.png" alt="chines_flag" class="order_type_img" />
-                <button class="btn btn-outline-primary">ПОДОБРАТЬ АВТО из КИТАЯ</button>
+                <button class="btn btn-outline-primary"><a href="#popup" class="popup_link">ПОДОБРАТЬ АВТО из
+                        КИТАЯ</a></button>
             </div>
         </div>
         <div class="description center">
@@ -109,32 +111,28 @@
             <a class="footer_info_link" href="about.html">Наши контакты</a>
         </nav>
         <div class="social_icons">
-            <a href="#"><img class="footer_icon" src="icons/social-instagram-svgrepo-com.svg" alt="" /></a>
-            <a href="#"><img class="footer_icon" src="icons/social-telegram-svgrepo-com.svg" alt="" /></a>
-            <a href="#"><img class="footer_icon" src="icons/social-vkontakte-svgrepo-com.svg" alt="" /></a>
-            <a href="#"><img class="footer_icon" src="icons/social-whats-app-svgrepo-com.svg" alt="" /></a>
-            <a href="#"><img class="footer_icon" src="icons/social-youtube-svgrepo-com.svg" alt="" /></a>
+            <a href="#"><img class="footer_icon" src="icons/square-instagram-brands-solid.svg" alt="" /></a>
+            <a href="#"><img class="footer_icon" src="icons/vk-brands-solid.svg" alt="" /></a>
+            <a href="#"><img class="footer_icon" src="icons/whatsapp-brands-solid.svg" alt="" /></a>
         </div>
     </footer>
     <div id="popup" class="popup">
         <div class="popup_buddy">
             <div class="popup_content">
-                <a href="#header" class="popup_close close_popup">X</a>
-                <form class="popup_content" action="" method="get">
-                    <input type="text" id="name" name="name" placeholder="Ваше имя" required><br>
-                    <input type="phone" id="phone" name="phone" placeholder="Ваш телефон" required><br>
-                    <input type="text" id="city" name="city" placeholder="Ваш город" required><br>
-                    <input type="text" id="auto" name="auto" placeholder="Какой авто вас интересует?" required><br>
-                    <input type="text" id="country" name="country" placeholder="Из какой страны везём авто?"
-                        required><br>
-                    <input type="text" id="money" name="money" placeholder="Бюджет в рублях" required><br>
-                    <input type="submit" value="Отправить" />
+                <form id="form_popup">
+                    <input name="name" placeholder="Укажите ваше имя!" class="name" required />
+                    <input name="email" placeholder="Укажите ваш Email!" class="email" type="email" required />
+                    <input name="phone" placeholder="Укажите ваш телефон!" class="phone" type="text" required />
+                    <input name="money" placeholder="Укажите ваш бюджет!" class="money" type="text" required />
+                    <textarea rows="4" cols="50" name="subject" placeholder="Введите марку и модель автомобиля:"
+                        class="message" required></textarea>
+                    <input name="submit" class="btn_popup" type="submit" value="Отправить" />
                 </form>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="popup.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
 
 </body>
 
