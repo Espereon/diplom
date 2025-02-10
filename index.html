@@ -120,23 +120,15 @@
         <div class="popup_buddy">
             <div class="popup_content">
                 <a href="#header" class="popup_close close_popup">X</a>
-                <form action="" method="get">
-                    <label>
-                        Ваше имя:
-                        <input type="text" name="name" placeholder="Иван Иванов">
-                    </label>
-
-                    <label>
-                        Электронная почта:
-                        <input type="email" name="email" placeholder="example@email.com">
-                    </label>
-                    <label>
-                        Отзыв:
-                        <textarea name="comment" placeholder="Что вам понравилось?"></textarea>
-                    </label>
-                    <button type="submit">
-                        Отправить
-                    </button>
+                <form class="popup_content" action="" method="get">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required><br>
+                    <input type="phone" id="phone" name="phone" placeholder="Ваш телефон" required><br>
+                    <input type="text" id="city" name="city" placeholder="Ваш город" required><br>
+                    <input type="text" id="auto" name="auto" placeholder="Какой авто вас интересует?" required><br>
+                    <input type="text" id="country" name="country" placeholder="Из какой страны везём авто?"
+                        required><br>
+                    <input type="text" id="money" name="money" placeholder="Бюджет в рублях" required><br>
+                    <input type="submit" value="Отправить" />
                 </form>
             </div>
         </div>

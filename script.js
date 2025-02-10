@@ -1,70 +1,58 @@
-let allProducts = [];
+let allCars = [];
 let currentFilterType = "Весь ассортимент";
 
-async function loadProducts() {
+async function loadCars() {
     try {
         const response = await fetch("./data.json");
         if (!response.ok) {
             throw new Error("Ошибка: " + response.statusText);
         }
-        allProducts = await response.json();
-        displayProducts(allProducts);
+        allCars = await response.json();
+        displayCars(allCars);
         initializeFilters();
     } catch (error) {
         console.error("Ошибка загрузки данных:", error);
     }
 }
 
-function updateProductsDisplay() {
-    let filteredProducts = filterProductsByType(currentFilterType);
-    displayProducts(filteredProducts);
+function updateCarsDisplay() {
+    let filteredcars = filterCarsByType(currentFilterType);
+    displayCars(filteredcars);
 }
 
-function displayProducts(products) {
-    const productsEl = document.querySelector(".products");
-    productsEl.innerHTML = "";
+function displayCars(cars) {
+    const carsEl = document.querySelector(".cars");
+    carsEl.innerHTML = "";
 
-    products.forEach((product) => {
+    cars.forEach((item) => {
         const card = document.createElement("div");
-        card.className = "product";
+        card.className = "car";
         card.innerHTML = `
-    <img class="product_img" src="${product.image}" alt="el1" />
-          <div class="product_info">
-            <h3 class="product_name">
-              ${product.name}
+    <img class="car_img" src="${item.image}" alt="el1" />
+          <div class="car_info">
+            <h3 class="car_name">
+              ${item.name}
             </h3>
             </a>
-            <p class="product_description">
-              Год ${product.year}
+            <p class="car_description">
+              Год ${item.year}
               </br>
-              Пробег ${product.kilometer}
+              Пробег ${item.kilometer}
               </br>
-              Двигатель ${product.engine}
+              Двигатель ${item.engine}
               </br>
-              Страна: ${product.country}
+              Страна: ${item.country}
             </p>
-            <p class="product_price">${product.price} рублей</p>
-            <button class="product_button" data-id="${product.id}">Подробнее</button>
+            <p class="car_price">${item.price} рублей</p>
+            <button class="car_button" data-id="${item.id}">Подробнее</button>
 
       `;
-        productsEl.appendChild(card);
-    });
-    const buttonEls = document.querySelectorAll(".product_button");
-    buttonEls.forEach((e) => {
-        e.addEventListener("click", (e) => {
-            const productId = e.target.dataset.id;
-            const product = products.find((prod) => prod.id == productId); // Находим продукт по ID
-
-            // Добавляем продукт в корзину
-            addToCart(product);
-            e.target.innerText = "Товар в корзине";
-            e.target.disabled = true;
-        });
+        carsEl.appendChild(card);
     });
 }
 
-function filterProductsByType(type) {
-    return allProducts.filter(
+function filterCarsByType(type) {
+    return allCars.filter(
         (product) => type === "Весь ассортимент" || product.type === type
     );
 }
@@ -76,10 +64,10 @@ function initializeFilters() {
         link.addEventListener("click", (event) => {
             event.preventDefault();
             currentFilterType = link.innerText;
-            updateProductsDisplay(); // Обновление списка продуктов
+            updateCarsDisplay(); // Обновление списка продуктов
         });
     });
 }
 
-loadProducts();
+loadCars();
 

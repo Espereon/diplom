@@ -389,7 +389,7 @@ body.lock {
     opacity: 0.5;
 }
 
-.products {
+.cars {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
@@ -397,7 +397,7 @@ body.lock {
     gap: 20px;
 }
 
-.product {
+.car {
     width: 300px;
     border: 1px solid rgb(240, 240, 240, 0.5);
     box-shadow: 17px 19px 24px 0px rgba(240, 240, 240, 0.50);
@@ -405,14 +405,14 @@ body.lock {
     background-color: rgba(34, 34, 34, 0.5);
 }
 
-.product_info {
+.car_info {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 5px;
 }
 
-.product_name {
+.car_name {
     padding: 5px;
     border-radius: 10px;
     font-family: Mulish;
@@ -423,7 +423,7 @@ body.lock {
     color: rgba(240, 240, 240, 0.8);
 }
 
-.product_description {
+.car_description {
     padding: 5px;
     border-radius: 10px;
     font-family: Mulish;
@@ -432,7 +432,7 @@ body.lock {
     color: rgba(240, 240, 240, 0.8);
 }
 
-.product_price {
+.car_price {
     padding: 5px;
     border-radius: 10px;
     font-family: Mulish;
@@ -442,7 +442,7 @@ body.lock {
     color: #379683;
 }
 
-.product_button {
+.car_button {
     background-color: rgb(55, 150, 131, 0.5);
     padding: 5px 10px;
     border-radius: 10px;
@@ -456,11 +456,11 @@ body.lock {
     cursor: pointer;
 }
 
-.product_button:active {
+.car_button:active {
     font-size: 11px;
 }
 
-.product_button:hover {
+.car_button:hover {
     color: #fff;
     background-color: rgb(55, 150, 131, 0.9);
     border: solid 1px #fff;
@@ -627,7 +627,7 @@ body.lock {
         font-weight: 700;
     }
 
-    .products {
+    .cars {
         margin-top: 20px;
         margin-bottom: 20px;
         display: grid;
@@ -637,17 +637,17 @@ body.lock {
     }
 
 
-    .product {
+    .car {
         margin-top: 40px;
         margin-bottom: 40px;
         gap: 80px;
     }
 
-    .product_info {
+    .car_info {
         gap: 30px;
     }
 
-    .product_description {
+    .car_description {
         font-size: 20px;
         font-weight: 400;
     }
@@ -806,7 +806,7 @@ body.lock {
         font-weight: 600;
     }
 
-    .products {
+    .cars {
         margin-top: 20px;
         margin-bottom: 20px;
         display: grid;
@@ -815,22 +815,22 @@ body.lock {
         gap: 10px;
     }
 
-    .product {
+    .car {
         width: 250px;
     }
 
-    .product_name {
+    .car_name {
         font-size: 16px;
         font-weight: 600;
     }
 
-    .product_description {
+    .car_description {
         font-size: 10px;
         font-weight: 300;
         height: 70px;
     }
 
-    .product_price {
+    .car_price {
         font-size: 14px;
     }
 
