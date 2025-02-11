@@ -65,10 +65,6 @@ body.lock {
     align-items: center;
 }
 
-.main_title_text {
-    padding-left: 10px;
-}
-
 .main_title_title {
     font-family: Mulish;
     font-size: 46px;
@@ -86,6 +82,16 @@ body.lock {
 }
 
 #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#background-video_catalog {
     position: fixed;
     top: 0;
     left: 0;
@@ -182,11 +188,6 @@ body.lock {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-}
-
-.add_num {
-    border-radius: 3000px;
-    background-color: #ff5e63;
 }
 
 .add_h1 {
@@ -600,7 +601,6 @@ body.lock {
     font-family: Mulish;
     font-size: 18px;
     font-weight: 400;
-    height: 100px;
 }
 
 .car-page_price {
@@ -631,7 +631,6 @@ form {
     overflow: hidden;
 }
 
-/* Поле сообщения */
 textarea {
     background: rgba(255, 255, 255, 0.4);
     width: 100%;
@@ -655,7 +654,6 @@ textarea {
     overflow: hidden;
 }
 
-/* Поля ввода */
 input {
     width: 100%;
     height: 48px;
@@ -793,6 +791,16 @@ textarea:focus {
         padding-right: calc(50% - 367px);
     }
 
+    #background-video_catalog {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
     .main_title {
         display: flex;
         align-items: center;
@@ -904,6 +912,14 @@ textarea:focus {
 }
 
 @media (max-width: 450px) {
+    #background-video_catalog {
+        display: none;
+    }
+
+    .catalog_main {
+        background-color: #333333;
+    }
+
     .center {
         padding-left: calc(50% - 171px);
         padding-right: calc(50% - 171px);
@@ -932,13 +948,6 @@ textarea:focus {
 
     .main_title_img {
         width: 200px;
-    }
-
-    .main_title_text {
-        border-top: solid 6px #e25822;
-        padding-top: 10px;
-        border-left: none;
-        text-align: center;
     }
 
     .main_title_title {
@@ -1031,6 +1040,30 @@ textarea:focus {
         font-size: 14px;
     }
 
+    .car-page {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 100px;
+        flex-direction: column;
+    }
+
+    .car-page_title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .car-page_info {
+        gap: 10px;
+        border: none;
+    }
+
+    .car-page_description {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
     .about_us {
         flex-direction: column;
         align-items: center;
@@ -1072,7 +1105,7 @@ textarea:focus {
     }
 
     .contacts_info {
-        border-left: 5px solid #e25822;
+        border-left: 5px solid #379683;
         padding-left: 30px;
         margin-bottom: 50px;
     }
