@@ -43,7 +43,6 @@ body.lock {
     font-size: 24px;
     font-weight: 700;
     line-height: 0px;
-    letter-spacing: 0%;
     text-align: center;
     color: #f2f3f4;
     transition: 0.3s;
@@ -75,7 +74,6 @@ body.lock {
     font-size: 46px;
     font-weight: 900;
     line-height: 60px;
-    letter-spacing: 0%;
     color: #d3c8df;
 }
 
@@ -84,7 +82,6 @@ body.lock {
     font-size: 32px;
     font-weight: 700;
     line-height: 50px;
-    letter-spacing: 0%;
     color: #cdc7d3;
 }
 
@@ -167,7 +164,6 @@ body.lock {
     font-family: Mulish;
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: 0%;
     text-align: left;
     color: #f2f3f4;
     margin-bottom: 0px;
@@ -256,7 +252,6 @@ body.lock {
     font-size: 12px;
     font-weight: 700;
     line-height: 0px;
-    letter-spacing: 0%;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -271,7 +266,6 @@ body.lock {
     font-size: 12px;
     font-weight: 700;
     line-height: 0px;
-    letter-spacing: 0%;
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.3s;
@@ -311,7 +305,6 @@ body.lock {
     font-size: 24px;
     font-weight: 900;
     line-height: 29px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -331,7 +324,6 @@ body.lock {
     font-family: Mulish;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0%;
     padding-top: 13px;
     width: 170px;
     position: relative;
@@ -380,7 +372,6 @@ body.lock {
     font-family: Mulish;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0%;
     color: #379683;
     transition: 0.3s;
 }
@@ -418,7 +409,6 @@ body.lock {
     font-family: Mulish;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 0%;
     height: 50px;
     color: rgba(240, 240, 240, 0.8);
 }
@@ -438,7 +428,6 @@ body.lock {
     font-family: Mulish;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0%;
     color: #379683;
 }
 
@@ -449,7 +438,6 @@ body.lock {
     font-family: Mulish;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0%;
     color: #f2f3f4;
     border: solid 1px rgb(244, 244, 244, 0.5);
     transition: 0.3s;
@@ -479,7 +467,6 @@ body.lock {
     font-family: Mulish;
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 0%;
     color: #379683;
 }
 
@@ -487,7 +474,6 @@ body.lock {
     font-family: Mulish;
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: 0%;
     color: #f2f3f4;
     margin-bottom: 20px;
 }
@@ -496,7 +482,6 @@ body.lock {
     font-family: Mulish;
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 0%;
     color: rgb(55, 150, 131, 0.5);
     text-align: center;
     padding: 30px;
@@ -522,7 +507,6 @@ body.lock {
     font-family: Mulish;
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: 0%;
     color: #379683;
     list-style-type: square;
 }
@@ -580,10 +564,6 @@ body.lock {
     gap: 10px
 }
 
-.popup_title {
-    font-size: 40px;
-    margin: 0px, 0px, 1em, 0px;
-}
 
 .car-page {
     display: flex;
@@ -611,7 +591,6 @@ body.lock {
     font-family: Mulish;
     font-size: 48px;
     font-weight: 900;
-    letter-spacing: 0%;
     color: #379683;
 }
 
@@ -621,7 +600,6 @@ body.lock {
     font-family: Mulish;
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0%;
     height: 100px;
 }
 
@@ -631,7 +609,6 @@ body.lock {
     font-family: Mulish;
     font-size: 30px;
     font-weight: 900;
-    letter-spacing: 0%;
     color: #379683;
 }
 
@@ -744,7 +721,8 @@ input.message {
     color: #fff;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     background-color: rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
     -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
